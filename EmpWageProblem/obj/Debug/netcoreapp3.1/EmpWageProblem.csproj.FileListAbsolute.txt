@@ -1,0 +1,14 @@
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\bin\Debug\netcoreapp3.1\EmpWageProblem.exe
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\bin\Debug\netcoreapp3.1\EmpWageProblem.deps.json
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\bin\Debug\netcoreapp3.1\EmpWageProblem.runtimeconfig.json
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\bin\Debug\netcoreapp3.1\EmpWageProblem.runtimeconfig.dev.json
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\bin\Debug\netcoreapp3.1\EmpWageProblem.dll
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\bin\Debug\netcoreapp3.1\EmpWageProblem.pdb
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\obj\Debug\netcoreapp3.1\EmpWageProblem.csproj.AssemblyReference.cache
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\obj\Debug\netcoreapp3.1\EmpWageProblem.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\obj\Debug\netcoreapp3.1\EmpWageProblem.AssemblyInfoInputs.cache
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\obj\Debug\netcoreapp3.1\EmpWageProblem.AssemblyInfo.cs
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\obj\Debug\netcoreapp3.1\EmpWageProblem.csproj.CoreCompileInputs.cache
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\obj\Debug\netcoreapp3.1\EmpWageProblem.dll
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\obj\Debug\netcoreapp3.1\EmpWageProblem.pdb
+D:\Bridgelabz lecture\Dot net\Day 3 C# empWageProblem\EmpWageProblem\obj\Debug\netcoreapp3.1\EmpWageProblem.genruntimeconfig.cache
