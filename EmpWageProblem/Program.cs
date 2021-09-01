@@ -11,18 +11,18 @@ namespace EmpWageProblem
         public const int WAGE_PER_HOUR = 20;
         public const int FULL_DAY_HOUR = 8;
         public const int MAX_WORKING_DAY = 20;
+        public const int MAX_WORKING_HOUR = 100;
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Computation");
             int empHour = 0;
             int salary = 0;
             int workingDay = 0;
-            int dayCount = 0;
             int empCheck;
             int totalHours = 0;
             Random random = new Random();
 
-            while ( workingDay <= MAX_WORKING_DAY && dayCount <= 30 )
+            while ( workingDay <= MAX_WORKING_DAY && totalHours <= MAX_WORKING_HOUR )
             {
                 empCheck = random.Next(0,3);
                 switch (empCheck)
@@ -45,11 +45,10 @@ namespace EmpWageProblem
                         Console.WriteLine("Invalid input");
                         break;
                 }
-                dayCount++;
                 totalHours += empHour;
             }
             salary = totalHours * WAGE_PER_HOUR;
-            Console.WriteLine("Working day is "+workingDay+" Salary earn "+salary);
+            Console.WriteLine("Working day is "+workingDay+" total working hour "+totalHours+" Salary earn "+salary);
         }
     }
 }
