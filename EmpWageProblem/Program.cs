@@ -10,35 +10,46 @@ namespace EmpWageProblem
         public const int IS_PART_TIME = 2;
         public const int WAGE_PER_HOUR = 20;
         public const int FULL_DAY_HOUR = 8;
+        public const int MAX_WORKING_DAY = 20;
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Computation");
             int empHour = 0;
             int salary = 0;
+            int workingDay = 0;
+            int dayCount = 0;
+            int empCheck;
+            int totalHours = 0;
             Random random = new Random();
-            int empCheck = random.Next(0,3);
 
-            switch (empCheck)
+            while ( workingDay <= MAX_WORKING_DAY && dayCount <= 30 )
             {
-                case IS_PRESENT:
-                    empHour = FULL_DAY_HOUR;
-                    Console.WriteLine("Employee is working full time");
-                    break;
-                case IS_PART_TIME:
-                    empHour = FULL_DAY_HOUR;
-                    Console.WriteLine("Employee is working part time");
-                    break;
-                case IS_ABSENT:
-                    Console.WriteLine("Employee is not working");
-                    empHour = 0;
-                    break;
-                default:
-                    Console.WriteLine("Invalid input");
-                    break;
+                empCheck = random.Next(0,3);
+                switch (empCheck)
+                {
+                    case IS_PRESENT:
+                        empHour = FULL_DAY_HOUR;
+                        workingDay++;
+                        Console.WriteLine("Employee is working full time");
+                        break;
+                    case IS_PART_TIME:
+                        empHour = FULL_DAY_HOUR;
+                        workingDay++;
+                        Console.WriteLine("Employee is working part time");
+                        break;
+                    case IS_ABSENT:
+                        Console.WriteLine("Employee is not working");
+                        empHour = 0;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid input");
+                        break;
+                }
+                dayCount++;
+                totalHours += empHour;
             }
-
-            salary = empHour * WAGE_PER_HOUR;
-            Console.WriteLine(salary);
+            salary = totalHours * WAGE_PER_HOUR;
+            Console.WriteLine("Working day is "+workingDay+" Salary earn "+salary);
         }
     }
 }
