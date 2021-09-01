@@ -23,6 +23,11 @@ namespace EmpWageProblem
                 empHour = FULL_DAY_HOUR;
                 Console.WriteLine("Employee is Present");
             }
+            else if (empCheck == IS_PART_TIME)
+            {
+                empHour = FULL_DAY_HOUR;
+                Console.WriteLine("Employee is working part time");
+            }
             else
             {
                 Console.WriteLine("Employee is Absent");
