@@ -17,22 +17,26 @@ namespace EmpWageProblem
             int salary = 0;
             Random random = new Random();
             int empCheck = random.Next(0,3);
-            
-            if (empCheck == IS_PRESENT)
+
+            switch (empCheck)
             {
-                empHour = FULL_DAY_HOUR;
-                Console.WriteLine("Employee is Present");
+                case IS_PRESENT:
+                    empHour = FULL_DAY_HOUR;
+                    Console.WriteLine("Employee is working full time");
+                    break;
+                case IS_PART_TIME:
+                    empHour = FULL_DAY_HOUR;
+                    Console.WriteLine("Employee is working part time");
+                    break;
+                case IS_ABSENT:
+                    Console.WriteLine("Employee is not working");
+                    empHour = 0;
+                    break;
+                default:
+                    Console.WriteLine("Invalid input");
+                    break;
             }
-            else if (empCheck == IS_PART_TIME)
-            {
-                empHour = FULL_DAY_HOUR;
-                Console.WriteLine("Employee is working part time");
-            }
-            else
-            {
-                Console.WriteLine("Employee is Absent");
-                empHour = 0;
-            }
+
             salary = empHour * WAGE_PER_HOUR;
             Console.WriteLine(salary);
         }
