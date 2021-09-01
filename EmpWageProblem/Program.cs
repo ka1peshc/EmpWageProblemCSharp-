@@ -16,7 +16,7 @@ namespace EmpWageProblem
             int empHour = 0;
             int salary = 0;
             Random random = new Random();
-            int empCheck = random.Next(0,2);
+            int empCheck = random.Next(0,3);
             
             if (empCheck == IS_PRESENT)
             {
