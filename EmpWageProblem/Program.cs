@@ -12,19 +12,15 @@ namespace EmpWageProblem
         public const int FULL_DAY_HOUR = 8;
         public const int MAX_WORKING_DAY = 20;
         public const int MAX_WORKING_HOUR = 100;
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Welcome to Employee Wage Computation");
-            int empHour = 0;
-            int salary = 0;
-            int workingDay = 0;
-            int empCheck;
-            int totalHours = 0;
-            Random random = new Random();
 
-            while ( workingDay <= MAX_WORKING_DAY && totalHours <= MAX_WORKING_HOUR )
+        public static void computeEmpWage()
+        {
+            int empHour = 0, salary = 0, workingDay = 0, totalHours = 0;
+            int empCheck;
+            Random random = new Random();
+            while (workingDay <= MAX_WORKING_DAY && totalHours <= MAX_WORKING_HOUR)
             {
-                empCheck = random.Next(0,3);
+                empCheck = random.Next(0, 3);
                 switch (empCheck)
                 {
                     case IS_PRESENT:
@@ -48,7 +44,12 @@ namespace EmpWageProblem
                 totalHours += empHour;
             }
             salary = totalHours * WAGE_PER_HOUR;
-            Console.WriteLine("Working day is "+workingDay+" total working hour "+totalHours+" Salary earn "+salary);
+            Console.WriteLine("Working day is " + workingDay + " total working hour " + totalHours + " Salary earn " + salary);
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to Employee Wage Computation");
+            computeEmpWage();
         }
     }
 }
