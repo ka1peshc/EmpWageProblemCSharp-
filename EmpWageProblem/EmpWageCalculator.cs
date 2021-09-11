@@ -8,12 +8,13 @@ namespace EmpWageProblem
     {
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
-        //class variables
+        //class instance variables
         private string company;
         private int empRatePerHour;
         private int numOfWorkingDays;
         private int maxHoursPerMonths;
         private int salary = 0;
+        //passing variable to this class variable
         public EmpWageCalculator(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonths)
         {
             this.company = company;
@@ -21,6 +22,7 @@ namespace EmpWageProblem
             this.numOfWorkingDays = numOfWorkingDays;
             this.maxHoursPerMonths = maxHoursPerMonths;
         }
+        //Calculating Wage
         public void computeEmpWage()
         {
             int empHour = 0, workingDay = 0, totalHours = 0;
@@ -48,7 +50,7 @@ namespace EmpWageProblem
             salary = totalHours * empRatePerHour;
             Console.WriteLine("total Emp wage for company: {0} is {1}", company, salary);
         }
-
+        //Display employee wage and his company name
         public string displaySalary()
         {
             return "total Emp wage for company: " + company + " is " + salary;
