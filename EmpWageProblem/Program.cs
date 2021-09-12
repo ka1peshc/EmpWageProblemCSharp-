@@ -10,12 +10,11 @@ namespace EmpWageProblem
         {
             //Welcome message
             Console.WriteLine("Welcome to Employee Wage Computation");
-            //Calculating wage using EmpWageCalculator class
-            //creating company using object instance
-            EmpWageCalculator MnM = new EmpWageCalculator("MnM",20,15,85);
-            MnM.computeEmpWage();
-            //display employee wage
-            Console.WriteLine(MnM.displaySalary());
+            EmpWageBuilder empWageBuilder = new EmpWageBuilder();
+            empWageBuilder.addCompanyEmp("Apple", 20, 20, 58);
+            empWageBuilder.addCompanyEmp("MT", 25, 10, 70);
+            empWageBuilder.addCompanyEmp("Raymond", 15, 25, 60);
+            empWageBuilder.computeEmpWage();
         }
     }
 }
